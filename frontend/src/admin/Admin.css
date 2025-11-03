@@ -1,0 +1,48 @@
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.admin-sidebar {
+  width: 220px;
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+}
+
+.admin-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.admin-nav li {
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.admin-nav li:hover {
+  background-color: #495057;
+}
+
+.admin-main {
+  flex: 1;
+  padding: 30px;
+  background-color: #f8f9fa;
+}
+
+/* Stats Cards */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}

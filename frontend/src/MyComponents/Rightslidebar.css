@@ -1,0 +1,84 @@
+/* Styling for the overall sidebar */
+.right-sidebar {
+  padding: 20px;
+  background-color: #fff;
+  border-left: 1px solid #e0e0e0;
+  height: calc(100vh - 56px); /* Full height, without scroll */
+  padding-right: 20px; /* Added space on the right side */
+  overflow: hidden; /* Prevent the parent from scrolling */
+}
+
+/* Styling for the friends section with scroll */
+.friends-section {
+  margin-top: 5px;
+  max-height: calc(100vh - 56px - 40px); /* Adjust to prevent overflow of friends section */
+  overflow-y: auto; /* Add scrollbar to the section when content overflows */
+}
+
+/* Customizing the scrollbar */
+.friends-section::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  height: 8px; /* Height of the horizontal scrollbar (if needed) */
+}
+
+.friends-section::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Roundness of the scrollbar thumb */
+  border: 2px solid transparent; /* To create a border around the thumb */
+  background-clip: content-box; /* Allow the thumb to have a border */
+}
+
+.friends-section::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+  border-radius: 10px; /* Round the track */
+}
+
+.friends-section::-webkit-scrollbar-button {
+  display: none; /* Hide the scrollbar arrows */
+}
+
+.friends-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.friends-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.friend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  word-wrap: break-word; /* Allow name to wrap */
+  overflow-wrap: break-word; /* Ensure long names wrap to the next line */
+  flex-grow: 0; /* Prevent the item from stretching */
+}
+
+.avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-right: 12px;
+  overflow: hidden; /* Prevent image from spilling outside the circle */
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure image is centered and cropped */
+}
+
+.friend-name {
+  font-size: 16px;
+  color: #222;
+  white-space: normal; /* Allow the name to wrap */
+  word-break: break-word; /* Ensure the name breaks correctly */
+  margin-right: 10px; /* Add gap to the right side of the name */
+  max-width: calc(100% - 50px); /* Ensure the name doesn't exceed container width */
+}

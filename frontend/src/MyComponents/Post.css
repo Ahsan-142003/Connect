@@ -1,0 +1,135 @@
+/* Post container */
+.post-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/* Post card */
+.post-card {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Image */
+.profile-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Post media container */
+.post-media-container {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.post-media {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+/* Post actions */
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+.post-action {
+  color: #606770;
+  font-weight: 500;
+  text-decoration: none;
+  flex: 1;
+  text-align: center;
+}
+
+.post-action:hover {
+  color: #0169E4;
+}
+
+/* Post Input Card */
+.post-card-1 {
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Post Input */
+.post-input {
+  flex: 1;
+  border-radius: 30px;
+  height: 45px;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  transition: 0.3s ease-in-out;
+}
+
+.post-input:focus {
+  border-color: #0169E4;
+  box-shadow: 0 0 5px rgba(1, 105, 228, 0.3);
+}
+
+/* Post Action Buttons */
+.post-action-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.2s ease-in-out;
+}
+
+.post-action-btn i {
+  font-size: 18px;
+}
+
+.post-action-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .post-media-container {
+    height: 300px;
+  }
+
+  .post-input {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .post-action-btn {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .post-action {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .post-media-container {
+    height: 200px;
+  }
+
+  .post-actions {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .post-action {
+    text-align: left;
+  }
+}
